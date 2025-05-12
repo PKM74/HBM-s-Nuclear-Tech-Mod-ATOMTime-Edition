@@ -78,7 +78,22 @@ public class ModItems {
 	public static final int guiID_item_book = 10105;
 	public static final int guiID_item_guide = 10106;
 	public static final int guiID_item_fluid_identifier = 10107;
-	
+
+	//RPK Stuff IG
+	public static final Item scrap_plastic = new ItemPlasticScrap("scrap_plastic").setCreativeTab(MainRegistry.resourceTab);
+	public static final Item le_picc = new ItemToolAbility(9999999F, -2.8F, 8.5, MainRegistry.enumToolMaterialAlloy, EnumToolType.PICKAXE, "le_pick")
+			.addBreakAbility(new ToolAbility.RecursionAbility(444444444))
+			.addBreakAbility(new ToolAbility.HammerAbility(100))
+			.addBreakAbility(new ToolAbility.SilkAbility())
+			.addBreakAbility(new LuckAbility(256))
+			.addBreakAbility(new ToolAbility.ShredderAbility())
+			.addBreakAbility(new ToolAbility.CentrifugeAbility())
+			.addBreakAbility(new ToolAbility.ExplosionAbility(50000))
+			.addHitAbility(new WeaponAbility.BeheaderAbility())
+			.addHitAbility(new WeaponAbility.ChainsawAbility(1))
+			.addHitAbility(new WeaponAbility.VampireAbility(12793));
+
+	//Classic!
 	public static final Item redstone_sword = new RedstoneSword(ToolMaterial.STONE, "redstone_sword").setCreativeTab(CreativeTabs.COMBAT);
 	public static final Item big_sword = new BigSword(ToolMaterial.DIAMOND, "big_sword").setCreativeTab(CreativeTabs.COMBAT);
 	

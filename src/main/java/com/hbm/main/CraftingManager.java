@@ -53,8 +53,8 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
-
-@Spaghetti("Norwood: This needs to be separated into multiple classes")
+// SEGREGATION TIME :3 orrr not...
+@Spaghetti("Norwood: This needs to be separated into multiple classes") // Spaghetti is a fucking understatement...
 public class CraftingManager {
 
 	public static RegistryEvent.Register<IRecipe> hack;
@@ -2748,6 +2748,7 @@ public class CraftingManager {
 	}
 
 	public static void addSmelting(){
+
 		GameRegistry.addSmelting(Item.getItemFromBlock(ModBlocks.ore_thorium), new ItemStack(ModItems.ingot_th232), 3.0F);
 		GameRegistry.addSmelting(Item.getItemFromBlock(ModBlocks.ore_uranium), new ItemStack(ModItems.ingot_uranium), 6.0F);
 		GameRegistry.addSmelting(Item.getItemFromBlock(ModBlocks.ore_uranium_scorched), new ItemStack(ModItems.ingot_uranium), 6.0F);
@@ -2804,6 +2805,7 @@ public class CraftingManager {
 		GameRegistry.addSmelting(ModItems.powder_verticium, new ItemStack(ModItems.ingot_verticium), 5.0F);
 		GameRegistry.addSmelting(Item.getItemFromBlock(ModBlocks.ore_australium), new ItemStack(ModItems.nugget_australium), 2.5F);
 
+		GameRegistry.addSmelting(ModItems.scrap_plastic, new ItemStack(ModItems.ingot_polymer), 1.5F);
 		GameRegistry.addSmelting(ModItems.powder_radspice, new ItemStack(ModItems.ingot_radspice), 1.0F);
 		GameRegistry.addSmelting(ModItems.powder_lead, new ItemStack(ModItems.ingot_lead), 1.0F);
 		GameRegistry.addSmelting(ModItems.powder_neptunium, new ItemStack(ModItems.ingot_neptunium), 1.0F);

@@ -1,13 +1,12 @@
 package com.hbm.items.special;
 
-import com.hbm.items.OldItemEnumMulti;
+import com.hbm.items.ItemEnumMulti;
 
-public class ItemPlasticScrap extends OldItemEnumMulti {
+//f this man (yes this is the first thing im porting over...)
+public class ItemPlasticScrap extends ItemEnumMulti {
 
-    public ItemPlasticScrap() {
-        super(ScrapType.class,
-                false,
-                false);
+    public ItemPlasticScrap(String registryName) {
+        super(registryName, ScrapType.class, false, false);
         this.setCreativeTab(null);
     }
 
