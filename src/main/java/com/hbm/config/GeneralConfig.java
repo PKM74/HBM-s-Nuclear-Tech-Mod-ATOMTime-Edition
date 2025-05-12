@@ -22,7 +22,7 @@ public class GeneralConfig {
 	public static boolean enableWelcomeMessage = true;
 	public static boolean enableFluidContainerCompat = true;
 	public static boolean enableMycelium = false;
-	public static boolean enablePlutoniumOre = false;
+	public static boolean enablePlutoniumOre = true;
 	public static boolean enableDungeons = true;
 	public static boolean enableMDOres = true;
 	public static boolean enableMines = true;
@@ -36,7 +36,7 @@ public class GeneralConfig {
 	public static boolean enableBomberShortMode = false;
 	public static boolean enableVaults = true;
 	public static boolean enableRads = true;
-	public static boolean enableCoal = true;
+	public static boolean enableCoal = false;
 	public static boolean enableAsbestos = true;
 	public static boolean advancedRadiation = true;
 	public static boolean enableCataclysm = false;
@@ -92,7 +92,7 @@ public class GeneralConfig {
 
 	public static boolean disableAsbestos = false;
 	public static boolean disableBlinding = false;
-	public static boolean disableCoal = false;
+	public static boolean disableCoal = true;
 	public static boolean disableExplosive = false;
 	public static boolean disableHydro = false;
 	public static boolean disableHot = false;
