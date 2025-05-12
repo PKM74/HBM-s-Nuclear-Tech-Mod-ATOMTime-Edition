@@ -45,14 +45,16 @@ public class GUIScreenBobble extends GuiScreen {
         double left = (this.width - sizeX) / 2;
         double top = (this.height - sizeY) / 2;
 
-        Tessellator tess = Tessellator.getInstance();
-        tess.startDrawingQuads();
-        tess.setColorRGBA_F(0F, 0.2F, 0F, 0.8F);
-        tess.addVertex(left + sizeX, top, this.zLevel);
-        tess.addVertex(left, top, this.zLevel);
-        tess.addVertex(left, top + sizeY, this.zLevel);
-        tess.addVertex(left + sizeX, top + sizeY, this.zLevel);
-        tess.draw();
+        // I WILL FIX IT I SWEAR
+
+//        Tessellator tess = Tessellator.getInstance();
+//        tess.startDrawingQuads();
+//        tess.setColorRGBA_F(0F, 0.2F, 0F, 0.8F);
+//        tess.addVertex(left + sizeX, top, this.zLevel);
+//        tess.addVertex(left, top, this.zLevel);
+//        tess.addVertex(left, top + sizeY, this.zLevel);
+//        tess.addVertex(left + sizeX, top + sizeY, this.zLevel);
+//        tess.draw();
 
         GL11.glEnable(GL11.GL_TEXTURE_2D);
         GL11.glEnable(GL11.GL_ALPHA_TEST);
